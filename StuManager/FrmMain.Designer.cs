@@ -55,6 +55,7 @@
             this.lstshow.Name = "lstshow";
             this.lstshow.Size = new System.Drawing.Size(452, 88);
             this.lstshow.TabIndex = 0;
+            this.lstshow.SelectedIndexChanged += new System.EventHandler(this.lstshow_SelectedIndexChanged);
             // 
             // lblnum
             // 
@@ -69,6 +70,7 @@
             // 
             this.txtnum.Location = new System.Drawing.Point(71, 109);
             this.txtnum.Name = "txtnum";
+            this.txtnum.ReadOnly = true;
             this.txtnum.Size = new System.Drawing.Size(100, 21);
             this.txtnum.TabIndex = 2;
             // 
@@ -126,6 +128,9 @@
             // cobsex
             // 
             this.cobsex.FormattingEnabled = true;
+            this.cobsex.Items.AddRange(new object[] {
+            "男",
+            "女"});
             this.cobsex.Location = new System.Drawing.Point(319, 167);
             this.cobsex.Name = "cobsex";
             this.cobsex.Size = new System.Drawing.Size(103, 20);
@@ -151,7 +156,7 @@
             // 
             // btnadd
             // 
-            this.btnadd.Location = new System.Drawing.Point(12, 285);
+            this.btnadd.Location = new System.Drawing.Point(26, 285);
             this.btnadd.Name = "btnadd";
             this.btnadd.Size = new System.Drawing.Size(75, 23);
             this.btnadd.TabIndex = 11;
@@ -167,6 +172,7 @@
             this.btndel.TabIndex = 12;
             this.btndel.Text = "删";
             this.btndel.UseVisualStyleBackColor = true;
+            this.btndel.Click += new System.EventHandler(this.btndel_Click);
             // 
             // btnupd
             // 
@@ -176,6 +182,7 @@
             this.btnupd.TabIndex = 13;
             this.btnupd.Text = "改";
             this.btnupd.UseVisualStyleBackColor = true;
+            this.btnupd.Click += new System.EventHandler(this.btnupd_Click);
             // 
             // btnsel
             // 
@@ -183,13 +190,15 @@
             this.btnsel.Name = "btnsel";
             this.btnsel.Size = new System.Drawing.Size(75, 23);
             this.btnsel.TabIndex = 14;
-            this.btnsel.Text = "查";
+            this.btnsel.Text = "退出";
             this.btnsel.UseVisualStyleBackColor = true;
+            this.btnsel.Click += new System.EventHandler(this.btnsel_Click);
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Snow;
             this.ClientSize = new System.Drawing.Size(452, 329);
             this.Controls.Add(this.btnsel);
             this.Controls.Add(this.btnupd);
@@ -207,9 +216,13 @@
             this.Controls.Add(this.txtnum);
             this.Controls.Add(this.lblnum);
             this.Controls.Add(this.lstshow);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmMain";
             this.Text = "管理系统";
+            this.Load += new System.EventHandler(this.FrmMain_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
