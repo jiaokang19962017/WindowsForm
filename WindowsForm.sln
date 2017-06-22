@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication4", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StuManager", "StuManager\StuManager.csproj", "{FF99803A-DAF1-4C69-8C49-0E87984FE80E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "图片框", "图片框\图片框.csproj", "{144CD302-DBDC-44CB-B914-31A7FDEEE36B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "定时器", "定时器\定时器.csproj", "{4585B0FA-F25A-45C9-A628-46DB43E6D969}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{FF99803A-DAF1-4C69-8C49-0E87984FE80E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF99803A-DAF1-4C69-8C49-0E87984FE80E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF99803A-DAF1-4C69-8C49-0E87984FE80E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{144CD302-DBDC-44CB-B914-31A7FDEEE36B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{144CD302-DBDC-44CB-B914-31A7FDEEE36B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{144CD302-DBDC-44CB-B914-31A7FDEEE36B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{144CD302-DBDC-44CB-B914-31A7FDEEE36B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4585B0FA-F25A-45C9-A628-46DB43E6D969}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4585B0FA-F25A-45C9-A628-46DB43E6D969}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4585B0FA-F25A-45C9-A628-46DB43E6D969}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4585B0FA-F25A-45C9-A628-46DB43E6D969}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
